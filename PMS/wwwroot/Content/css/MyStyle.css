@@ -1,0 +1,12 @@
+﻿.objRight{
+    text-align: right;
+}
+.row-head
+{
+    margin-bottom: 8px;
+}
+.objright {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

@@ -1,0 +1,88 @@
+﻿@model IEnumerable<PMS.Models.TblBaseSalary>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .objRight {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+</style>
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="row row-head">
+                    <div class="col-lg-9 ">
+                        <h4 class="card-title" style="margin-bottom:0px;">Quản lý lương cơ sở</h4>
+                    </div>
+                    <div class="col-lg-3 objRight">
+                        <a href="@Url.Action("Create")" class="btn btn-sm btn-success">Thêm mới</a>
+                    </div>
+                </div>            
+
+                <div class="table-responsive">
+                    <table id="myTable" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th class="text-nowrap">#</th>
+                                <th>Tên</th>
+                                <th>Giá trị</th>
+                                <th>Ngày hiệu lực</th>
+                                <th>Mô tả</th>
+                                <th>Trạng thái</th>
+                                <th>Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (Model != null)
+                            {
+                                var i = 1;
+                                foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@(i++)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Value)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.DateIssued)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Description)
+                                        </td>
+                                        <td style="width:150px">
+                                            @if(item.Status == 0)
+                                            {
+                                                <span class = "badge bg-danger">Hết hiệu lực</span>
+                                            }
+                                            else
+                                            {
+                                                <span class="badge bg-success">Hoạt động</span>
+                                            }
+                                            
+                                        </td>
+                                        <td class="text-center">
+                                            <a asp-action="Edit" asp-route-id="@item.Id" class="text-primary me-3" title="Sửa">
+                                                <i class="bi bi-pencil-square fs-5"></i>
+                                            </a>
+                                            <a asp-action="Delete" asp-route-id="@item.Id" class="text-danger" title="Xóa">
+                                                <i class="bi bi-trash fs-5"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

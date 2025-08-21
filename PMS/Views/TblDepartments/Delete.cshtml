@@ -1,0 +1,124 @@
+﻿@model PMS.Models.TblDepartment
+@{
+    ViewData["Title"] = "Xóa Phòng ban";
+}
+
+<div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+            <div class="card shadow border-0 rounded-3">
+                <div class="card-header bg-danger text-white text-center py-3">
+                    <h5 class="mb-0"><i class="bi bi-trash me-2"></i>Xóa Phòng Ban</h5>
+                </div>
+                <div class="card-body p-3">
+                    <div class="info-list">
+                        @if (!string.IsNullOrEmpty(Model.Name))
+                        {
+                            <div class="info-row">
+                                <span class="label">Tên phòng ban:</span>
+                                <span class="value">@Model.Name</span>
+                            </div>
+                        }
+                        @if (!string.IsNullOrEmpty(Model.ShortName))
+                        {
+                            <div class="info-row">
+                                <span class="label">Tên viết tắt:</span>
+                                <span class="value">@Model.ShortName</span>
+                            </div>
+                        }
+                        @if (!string.IsNullOrEmpty(Model.Note))
+                        {
+                            <div class="info-row">
+                                <span class="label">Ghi chú:</span>
+                                <span class="value">@Model.Note</span>
+                            </div>
+                        }
+                        @if (!string.IsNullOrEmpty(Model.Description))
+                        {
+                            <div class="info-row">
+                                <span class="label">Mô tả:</span>
+                                <span class="value">@Model.Description</span>
+                            </div>
+                        }
+                        <div class="info-row">
+                            <span class="label">Trạng thái:</span>
+                            <span class = "value">
+                                @(Model.Status == 1 ? "Hoạt động": " Ngưng hoạt động")
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer bg-light text-center py-3 border-0">
+                    <form asp-action="Delete" class="d-inline" id="deleteForm">
+                        <input type="hidden" asp-for="Id" />
+                        <button type="submit" class="btn btn-danger btn-sm me-2">
+                            <i class="bi bi-trash me-1"></i>Xóa
+                        </button>
+                        <a asp-action="Index" class="btn btn-outline-secondary btn-sm">
+                            <i class="bi bi-arrow-left me-1"></i>Quay lại
+                        </a>
+                    </form>
+
+                    <script>
+                        document.getElementById("deleteForm").addEventListener("submit", function (e) {
+                            if (!confirm("Bạn có chắc chắn muốn xóa phòng ban '@Html.Raw(@Model.Name)'?")) {
+                                e.preventDefault(); // Ngăn submit nếu chọn Cancel
+                            }
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .info-list {
+        background: #f8f9fa;
+        border-radius: 0.375rem;
+        padding: 1rem;
+    }
+
+    .info-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid #e9ecef;
+        gap: 1rem;
+    }
+
+        .info-row:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .info-row .label {
+            font-weight: 600;
+            color: #6c757d;
+            white-space: nowrap;
+            font-size: 0.9rem;
+        }
+
+        .info-row .value {
+            color: #212529;
+            text-align: right;
+            word-break: break-word;
+            font-size: 0.9rem;
+        }
+
+    .card {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .alert {
+        font-size: 0.9rem;
+        padding: 0.75rem;
+    }
+
+    .btn-sm {
+        padding: 0.375rem 1rem;
+        font-size: 0.875rem;
+    }
+</style>
