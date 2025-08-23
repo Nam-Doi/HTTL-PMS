@@ -1,52 +1,116 @@
 ﻿@model PMS.Models.TblBaseSalary
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "DANH MỤC MỨC LƯƠNG CƠ SỞ";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Edit</h1>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow border-0 rounded-3">
+                <div class="card-body">
 
-<h4>TblBaseSalary</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id" />
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
+                    <!-- Header -->
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="card-title mb-0">Chỉnh sửa lương cơ bản</h4>
+                        <a href="@Url.Action("Index")" class="btn btn-secondary btn-sm">
+                            <i class="fa fa-arrow-left"></i> Quay lại
+                        </a>
+                    </div>
+                    <hr />
+
+                    <!-- Form -->
+                    <form asp-action="Edit" method="post" Id="editSalaryForm">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+                        <input type="hidden" asp-for="Id" />
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="Name" class="control-label font-weight-bold">
+                                        Tên mức lương <span class="text-danger">*</span>
+                                    </label>
+                                    <input asp-for="Name" class="form-control" placeholder="Nhập tên mức lương" />
+                                    <span asp-validation-for="Name" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="Value" class="control-label font-weight-bold">
+                                        Giá trị <span class="text-danger">*</span>
+                                    </label>
+                                    <input asp-for="Value" class="form-control" placeholder="Nhập giá trị" />
+                                    <span asp-validation-for="Value" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hàng DateIssued và Status -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="DateIssued" class="control-label font-weight-bold">
+                                        Ngày ban hành <span class="text-danger">*</span>
+                                    </label>
+                                    <input asp-for="DateIssued" type="date" class="form-control" />
+                                    <span asp-validation-for="DateIssued" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="Status" class="control-label font-weight-bold">
+                                        Trạng thái <span class="text-danger">*</span>
+                                    </label>
+                                    <select asp-for="Status" class="form-control">
+                                        <option value="1">Áp dụng</option>
+                                        <option value="0">Ngưng áp dụng</option>
+                                    </select>
+                                    <span asp-validation-for="Status" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hàng Mô tả riêng -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label asp-for="Description" class="control-label font-weight-bold">
+                                        Mô tả
+                                    </label>
+                                    <textarea asp-for="Description" class="form-control" rows="3" placeholder="Mô tả ngắn..."></textarea>
+                                    <span asp-validation-for="Description" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="form-group text-center mt-4">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="fa fa-save"></i> Lưu thay đổi
+                            </button>
+                            <a asp-action="Index" class="btn btn-secondary btn-lg ml-2">
+                                <i class="fa fa-arrow-left"></i> Quay lại
+                            </a>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="Value" class="control-label"></label>
-                <input asp-for="Value" class="form-control" />
-                <span asp-validation-for="Value" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DateIssued" class="control-label"></label>
-                <input asp-for="DateIssued" class="form-control" />
-                <span asp-validation-for="DateIssued" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Description" class="control-label"></label>
-                <input asp-for="Description" class="form-control" />
-                <span asp-validation-for="Description" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Status" class="control-label"></label>
-                <input asp-for="Status" class="form-control" />
-                <span asp-validation-for="Status" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+<script>
+    document.getElementById("editSalaryForm").addEventListener("submit", function (e) {
+        if (!confirm("Are you sure you want to update the base salary '@Html.Raw(@Model.Name)'?")) {
+            e.preventDefault(); // Hủy submit nếu người dùng bấm Cancel
+        }
+    });
+</script>

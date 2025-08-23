@@ -1,6 +1,6 @@
 ﻿@model IEnumerable<PMS.Models.TblDepartment>
 @{
-    ViewData["Title"] = "Danh mục phòng ban";
+    ViewData["Title"] = "DANH MỤC PHÒNG BAN";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -20,12 +20,11 @@
                     <table id="myTable" class="table table-bordered table-striped border rounded-3">
                         <thead>
                             <tr>
-                                <th class="text-nowrap text-center" style="width:50px;">STT</th>
+                                <th class="text-nowrap text-center" style="width:40px;">STT</th>
                                 <th class="text-center" style="width:200px; text-transform:none;">Tên phòng ban</th>
                                 <th class="text-center" style="width:120px;text-transform:none;">Tên viết tắt</th>
-                                <th class="text-center" style="width:250px;text-transform:none;">Mô tả</th>
-                                <th class="text-center" style="width:300px;text-transform:none;">Ghi chú</th> <!-- rộng hơn -->
-                                <th class="text-center" style="width:120px;text-transform:none;">Trạng thái</th> <!-- nhỏ lại -->
+                                <th class="text-center" style="width:360px;text-transform:none;">Mô tả</th>
+                                <th class="text-center" style="width:200px;text-transform:none;">Ghi chú</th> <!-- rộng hơn -->
                                 <th class="text-center" style="width:100px;text-transform:none;">Thao tác</th>
                             </tr>
                         </thead>
@@ -41,16 +40,6 @@
                                         <td>@Html.DisplayFor(modelItem => item.ShortName)</td>
                                         <td>@Html.DisplayFor(modelItem => item.Description)</td>
                                         <td>@Html.DisplayFor(modelItem => item.Note)</td>
-                                        <td class="text-center">
-                                            @if (item.Status == 0)
-                                            {
-                                                <span class="badge bg-danger">Ngừng hoạt động</span>
-                                            }
-                                            else
-                                            {
-                                                <span class="badge bg-success">Hoạt động</span>
-                                            }
-                                        </td>
                                         <td class="text-center">
                                             <a asp-action="Edit" asp-route-id="@item.Id" class="text-primary me-3" title="Sửa">
                                                 <i class="bi bi-pencil-square fs-5"></i>

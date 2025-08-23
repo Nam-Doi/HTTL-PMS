@@ -27,7 +27,7 @@ using PMS.Models
 #nullable disable
     ;
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"a6ba1134502be6d43d2c533981878a9981b7633105e9f8f8a4e8e2fd9901f833", @"/Views/Login/Edit.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"21d866b776ed6466e6893069e209361096b8f3be545ab23ace3daa4c5be95fd9", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"83b5892872b9832a1e8234091eadcc90e0acc594c5e18fc036d5742e68d0e2bc", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Login_Edit : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<PMS.Models.TblUser>
     #nullable disable

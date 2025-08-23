@@ -1,65 +1,90 @@
 ﻿@model PMS.Models.TblDepartment
 
 @{
-    ViewData["Title"] = "Chỉnh sửa phòng ban";
+    ViewData["Title"] = "DANH MỤC PHÒNG BAN";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="container py-4">
-    <div class="row justify-content-center">
-        <div class="col-md-8 col-lg-6">
-            <div class="card shadow border-0 rounded-3">
-                <div class="card-header bg-primary text-white text-center py-3">
-                    <h5 class="mb-0">
-                        <i class="bi bi-pencil-square me-2"></i>Chỉnh sửa thông tin phòng ban
-                    </h5>
-                </div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <!-- Header -->
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="card-title mb-0">Chỉnh sửa phòng ban</h4>
+                        <a href="@Url.Action("Index")" class="btn btn-secondary btn-sm">
+                            <i class="fa fa-arrow-left"></i> Quay lại
+                        </a>
+                    </div>
+                    <hr />
 
-                <div class="card-body p-4">
-                    <form asp-action="Edit">
-                        <div asp-validation-summary="ModelOnly" class="alert alert-danger small"></div>
+                    <!-- Form -->
+                    <form asp-action="Edit" method="post">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
                         <input type="hidden" asp-for="Id" />
 
-                        <div class="mb-3">
-                            <label asp-for="Name" class="form-label fw-semibold"></label>
-                            <input asp-for="Name" class="form-control" placeholder="Nhập tên phòng ban..." />
-                            <span asp-validation-for="Name" class="text-danger small"></span>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="Name" class="control-label font-weight-bold">
+                                        Tên phòng ban <span class="text-danger">*</span>
+                                    </label>
+                                    <input asp-for="Name" class="form-control" placeholder="Nhập tên phòng ban" />
+                                    <span asp-validation-for="Name" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="ShortName" class="control-label font-weight-bold">
+                                        Tên viết tắt
+                                    </label>
+                                    <input asp-for="ShortName" class="form-control" placeholder="Nhập tên viết tắt" />
+                                    <span asp-validation-for="ShortName" class="text-danger"></span>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="mb-3">
-                            <label asp-for="ShortName" class="form-label fw-semibold"></label>
-                            <input asp-for="ShortName" class="form-control" placeholder="Nhập tên viết tắt..." />
-                            <span asp-validation-for="ShortName" class="text-danger small"></span>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="Description" class="control-label font-weight-bold">Mô tả</label>
+                                    <textarea asp-for="Description" class="form-control" rows="3" placeholder="Mô tả ngắn..."></textarea>
+                                    <span asp-validation-for="Description" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="Note" class="control-label font-weight-bold">Ghi chú</label>
+                                    <textarea asp-for="Note" class="form-control" rows="3" placeholder="Nhập ghi chú..."></textarea>
+                                    <span asp-validation-for="Note" class="text-danger"></span>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="mb-3">
-                            <label asp-for="Description" class="form-label fw-semibold"></label>
-                            <textarea asp-for="Description" class="form-control" rows="3" placeholder="Mô tả ngắn..."></textarea>
-                            <span asp-validation-for="Description" class="text-danger small"></span>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="Status" class="control-label font-weight-bold">
+                                        Trạng thái <span class="text-danger">*</span>
+                                    </label>
+                                    <select asp-for="Status" class="form-control">
+                                        <option value="1">Hoạt động</option>
+                                        <option value="0">Ngưng hoạt động</option>
+                                    </select>
+                                    <span asp-validation-for="Status" class="text-danger"></span>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="mb-3">
-                            <label asp-for="Note" class="form-label fw-semibold"></label>
-                            <input asp-for="Note" class="form-control" placeholder="Ghi chú..." />
-                            <span asp-validation-for="Note" class="text-danger small"></span>
-                        </div>
-
-                        <div class="mb-3">
-                            <label asp-for="Status" class="form-label fw-semibold"></label>
-                            <select asp-for="Status" class="form-select">
-                                <option value="1">Hoạt động</option>
-                                <option value="0">Ngưng hoạt động</option>
-                            </select>
-                            <span asp-validation-for="Status" class="text-danger small"></span>
-                        </div>
-
-                        <div class="d-flex justify-content-between mt-4">
-                            <a asp-action="Index" class="btn btn-outline-secondary btn-sm">
-                                <i class="bi bi-arrow-left me-1"></i>Quay lại
-                            </a>
-                            <button type="submit" class="btn btn-success btn-sm px-4">
-                                <i class="bi bi-check-circle me-1"></i>Lưu thay đổi
+                        <!-- Buttons -->
+                        <div class="form-group text-center mt-4">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="fa fa-save"></i> Lưu thay đổi
                             </button>
+                            <a asp-action="Index" class="btn btn-secondary btn-lg ml-2">
+                                <i class="fa fa-arrow-left"></i> Quay lại
+                            </a>
                         </div>
                     </form>
                 </div>
@@ -68,27 +93,8 @@
     </div>
 </div>
 
-<style>
-    .form-label {
-        font-size: 0.9rem;
-        color: #495057;
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
-
-    .form-control, .form-select {
-        font-size: 0.9rem;
-        padding: 0.5rem 0.75rem;
-        border-radius: 0.375rem;
-    }
-
-    .btn-sm {
-        padding: 0.375rem 1rem;
-        font-size: 0.875rem;
-        border-radius: 0.375rem;
-    }
-
-    .alert {
-        font-size: 0.85rem;
-        padding: 0.5rem 0.75rem;
-    }
-
-</style>
+}

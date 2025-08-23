@@ -375,8 +375,14 @@ C:\Users\Admin\NCKH-HTTL\DM_PMS-master\DM_PMS-master\PMS\bin\Debug\net5.0\runtim
 C:\Users\Admin\NCKH-HTTL\DM_PMS-master\DM_PMS-master\PMS\bin\Debug\net5.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\Admin\NCKH-HTTL\DM_PMS-master\DM_PMS-master\PMS\bin\Debug\net5.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\Admin\NCKH-HTTL\DM_PMS-master\DM_PMS-master\PMS\bin\Debug\net5.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Admin\NCKH-HTTL\DM_PMS-master\DM_PMS-master\PMS\obj\Debug\net5.0\PMS.sourcelink.json
 C:\Users\Admin\NCKH-HTTL\DM_PMS-master\DM_PMS-master\PMS\obj\Debug\net5.0\Razor\Views\TblDepartments\Create.cshtml.g.cs
 C:\Users\Admin\NCKH-HTTL\DM_PMS-master\DM_PMS-master\PMS\obj\Debug\net5.0\Razor\Views\TblDepartments\Delete.cshtml.g.cs
 C:\Users\Admin\NCKH-HTTL\DM_PMS-master\DM_PMS-master\PMS\obj\Debug\net5.0\Razor\Views\TblDepartments\Details.cshtml.g.cs
 C:\Users\Admin\NCKH-HTTL\DM_PMS-master\DM_PMS-master\PMS\obj\Debug\net5.0\Razor\Views\TblDepartments\Edit.cshtml.g.cs
 C:\Users\Admin\NCKH-HTTL\DM_PMS-master\DM_PMS-master\PMS\obj\Debug\net5.0\Razor\Views\TblDepartments\Index.cshtml.g.cs
+C:\Users\Admin\NCKH-HTTL\DM_PMS-master\DM_PMS-master\PMS\obj\Debug\net5.0\Razor\Views\TblPhoneLimits\Create.cshtml.g.cs
+C:\Users\Admin\NCKH-HTTL\DM_PMS-master\DM_PMS-master\PMS\obj\Debug\net5.0\Razor\Views\TblPhoneLimits\Delete.cshtml.g.cs
+C:\Users\Admin\NCKH-HTTL\DM_PMS-master\DM_PMS-master\PMS\obj\Debug\net5.0\Razor\Views\TblPhoneLimits\Details.cshtml.g.cs
+C:\Users\Admin\NCKH-HTTL\DM_PMS-master\DM_PMS-master\PMS\obj\Debug\net5.0\Razor\Views\TblPhoneLimits\Edit.cshtml.g.cs
+C:\Users\Admin\NCKH-HTTL\DM_PMS-master\DM_PMS-master\PMS\obj\Debug\net5.0\Razor\Views\TblPhoneLimits\Index.cshtml.g.cs

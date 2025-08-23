@@ -1,0 +1,135 @@
+﻿@model PMS.Models.TblPhoneLimit
+
+@{
+    ViewData["Title"] = "DANH MỤC ĐỊNH MỨC ĐIỆN THOẠI";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+
+                    <!-- Header -->
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="card-title mb-0">Thêm mới định mức điện thoại</h4>
+                        <a href="@Url.Action("Index")" class="btn btn-secondary btn-sm">
+                            <i class="fa fa-arrow-left"></i> Quay lại
+                        </a>
+                    </div>
+                    <hr />
+
+                    <!-- Form -->
+                    <form asp-action="Create" method="post">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="PosionId" class="control-label font-weight-bold">Vị trí <span class="text-danger">*</span></label>
+                                    <select asp-for="PosionId" class="form-control" asp-items="ViewBag.PosionId">
+                                        <option value="">-- Chọn vị trí --</option>
+                                    </select>
+                                    <span asp-validation-for="PosionId" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="ValueLimit" class="control-label font-weight-bold">Giá trị định mức <span class="text-danger">*</span></label>
+                                    <input asp-for="ValueLimit" class="form-control" placeholder="Nhập giá trị định mức" />
+                                    <span asp-validation-for="ValueLimit" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="DateIssued" class="control-label font-weight-bold">Ngày ban hành <span class="text-danger">*</span></label>
+                                    <input asp-for="DateIssued" type="date" class="form-control" />
+                                    <span asp-validation-for="DateIssued" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="Status" class="control-label font-weight-bold">Trạng thái <span class="text-danger">*</span></label>
+                                    <select asp-for="Status" class="form-control">
+                                        <option value="1">Hoạt động</option>
+                                        <option value="0">Ngưng hoạt động</option>
+                                    </select>
+                                    <span asp-validation-for="Status" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Các thuộc tính Created / Modified -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="CreatedDate" class="control-label font-weight-bold">Ngày tạo</label>
+                                    <input asp-for="CreatedDate" type="date" class="form-control" />
+                                    <span asp-validation-for="CreatedDate" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="CreatedUser" class="control-label font-weight-bold">Người tạo</label>
+                                    <input asp-for="CreatedUser" class="form-control" placeholder="Nhập tên người tạo" />
+                                    <span asp-validation-for="CreatedUser" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="ModifiedDate" class="control-label font-weight-bold">Ngày sửa</label>
+                                    <input asp-for="ModifiedDate" type="date" class="form-control" />
+                                    <span asp-validation-for="ModifiedDate" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="ModifiedUser" class="control-label font-weight-bold">Người sửa</label>
+                                    <input asp-for="ModifiedUser" class="form-control" placeholder="Nhập tên người sửa" />
+                                    <span asp-validation-for="ModifiedUser" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label asp-for="Note" class="control-label font-weight-bold">Ghi chú</label>
+                                    <textarea asp-for="Note" class="form-control" rows="3" placeholder="Nhập ghi chú"></textarea>
+                                    <span asp-validation-for="Note" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="form-group text-center mt-4">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="fa fa-save"></i> Tạo mới
+                            </button>
+                            <a asp-action="Index" class="btn btn-secondary btn-lg ml-2">
+                                <i class="fa fa-arrow-left"></i> Quay lại
+                            </a>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

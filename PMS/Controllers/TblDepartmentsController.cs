@@ -9,7 +9,7 @@ using PMS.Models;
 
 namespace PMS.Controllers
 {
-    public class TblDepartmentsController : BaseController   // ✅ kế thừa BaseController
+    public class TblDepartmentsController : Controller
     {
         private readonly PMSDbContext _context;
 
@@ -49,6 +49,8 @@ namespace PMS.Controllers
         }
 
         // POST: TblDepartments/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Name,ShortName,Description,Note,Status")] TblDepartment tblDepartment)
@@ -57,10 +59,6 @@ namespace PMS.Controllers
             {
                 _context.Add(tblDepartment);
                 await _context.SaveChangesAsync();
-
-                // ✅ sửa SetAlett thành SetAlert
-                SetAlert("success", "Thêm dữ liệu thành công");
-
                 return RedirectToAction(nameof(Index));
             }
             return View(tblDepartment);
@@ -83,6 +81,8 @@ namespace PMS.Controllers
         }
 
         // POST: TblDepartments/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Name,ShortName,Description,Note,Status")] TblDepartment tblDepartment)
@@ -98,8 +98,6 @@ namespace PMS.Controllers
                 {
                     _context.Update(tblDepartment);
                     await _context.SaveChangesAsync();
-
-                    SetAlert("success", "Cập nhật dữ liệu thành công");
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -141,13 +139,8 @@ namespace PMS.Controllers
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var tblDepartment = await _context.TblDepartments.FindAsync(id);
-            if (tblDepartment != null)
-            {
-                _context.TblDepartments.Remove(tblDepartment);
-                await _context.SaveChangesAsync();
-
-                SetAlert("success", "Xóa dữ liệu thành công");
-            }
+            _context.TblDepartments.Remove(tblDepartment);
+            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 

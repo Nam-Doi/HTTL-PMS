@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<PMS.Models.TblBaseSalary>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "DANH MỤC MỨC LƯƠNG CƠ SỞ";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -23,19 +23,18 @@
                     <div class="col-lg-3 objRight">
                         <a href="@Url.Action("Create")" class="btn btn-sm btn-success">Thêm mới</a>
                     </div>
-                </div>            
+                </div>
 
                 <div class="table-responsive">
-                    <table id="myTable" class="table table-bordered table-striped">
-                        <thead>
-                            <tr>
-                                <th class="text-nowrap">#</th>
-                                <th>Tên</th>
-                                <th>Giá trị</th>
-                                <th>Ngày hiệu lực</th>
-                                <th>Mô tả</th>
-                                <th>Trạng thái</th>
-                                <th>Thao tác</th>
+                    <table id="myTable" class="table table-bordered table-striped align-middle" style="table-layout: fixed; width:100%;">
+                        <thead class="table-light">
+                            <tr class="text-center"> 
+                                <th style="width: 40px;">STT</th>
+                                <th style="width: 150px;">Tên mức lương</th>
+                                <th style="width: 130px;">Mức lương VNĐ</th>
+                                <th style="width: 150px;">Ngày hiệu lực</th>
+                                <th style="width: 340px;">Mô tả</th>
+                                <th style="width: 60px;">Thao tác</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -47,27 +46,12 @@
                                     <tr>
                                         <td>@(i++)</td>
                                         <td>@Html.DisplayFor(modelItem => item.Name)</td>
-                                        <td>
-                                            @Html.DisplayFor(modelItem => item.Value)
+                                        <td>@string.Format("{0:N0}", item.Value)</td>
+                                        <td>@item.DateIssued.ToString("dd/MM/yyyy")</td>
+                                        <td class="text-truncate" style="max-width:300px;" title="@item.Description">
+                                            @item.Description
                                         </td>
                                         <td>
-                                            @Html.DisplayFor(modelItem => item.DateIssued)
-                                        </td>
-                                        <td>
-                                            @Html.DisplayFor(modelItem => item.Description)
-                                        </td>
-                                        <td style="width:150px">
-                                            @if(item.Status == 0)
-                                            {
-                                                <span class = "badge bg-danger">Hết hiệu lực</span>
-                                            }
-                                            else
-                                            {
-                                                <span class="badge bg-success">Hoạt động</span>
-                                            }
-                                            
-                                        </td>
-                                        <td class="text-center">
                                             <a asp-action="Edit" asp-route-id="@item.Id" class="text-primary me-3" title="Sửa">
                                                 <i class="bi bi-pencil-square fs-5"></i>
                                             </a>
@@ -81,6 +65,7 @@
                         </tbody>
                     </table>
                 </div>
+
             </div>
         </div>
     </div>
