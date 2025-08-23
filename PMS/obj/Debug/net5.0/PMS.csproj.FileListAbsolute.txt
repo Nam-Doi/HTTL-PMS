@@ -386,3 +386,7 @@ C:\Users\Admin\NCKH-HTTL\DM_PMS-master\DM_PMS-master\PMS\obj\Debug\net5.0\Razor\
 C:\Users\Admin\NCKH-HTTL\DM_PMS-master\DM_PMS-master\PMS\obj\Debug\net5.0\Razor\Views\TblPhoneLimits\Details.cshtml.g.cs
 C:\Users\Admin\NCKH-HTTL\DM_PMS-master\DM_PMS-master\PMS\obj\Debug\net5.0\Razor\Views\TblPhoneLimits\Edit.cshtml.g.cs
 C:\Users\Admin\NCKH-HTTL\DM_PMS-master\DM_PMS-master\PMS\obj\Debug\net5.0\Razor\Views\TblPhoneLimits\Index.cshtml.g.cs
+C:\Users\Admin\NCKH-HTTL\DM_PMS-master\DM_PMS-master\PMS\obj\Debug\net5.0\Razor\Views\Phutro\Index.cshtml.g.cs
+C:\Users\Admin\NCKH-HTTL\DM_PMS-master\DM_PMS-master\PMS\obj\Debug\net5.0\Razor\Views\Phutro\_PhuTroCDPhi.cshtml.g.cs
+C:\Users\Admin\NCKH-HTTL\DM_PMS-master\DM_PMS-master\PMS\obj\Debug\net5.0\Razor\Views\Phutro\_PhuTroDienThoai.cshtml.g.cs
+C:\Users\Admin\NCKH-HTTL\DM_PMS-master\DM_PMS-master\PMS\obj\Debug\net5.0\Razor\Views\Phutro\_PhuTroTNCN.cshtml.g.cs

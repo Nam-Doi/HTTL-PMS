@@ -3,40 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|c:\\users\\admin\\nckh-httl\\dm_pms-master\\dm_pms-master\\pms\\views\\tblphonelimits\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|solutionrelative:pms\\views\\tblphonelimits\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|c:\\users\\admin\\nckh-httl\\dm_pms-master\\dm_pms-master\\pms\\views\\tblbasesalaries\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|solutionrelative:pms\\views\\tblbasesalaries\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|c:\\users\\admin\\nckh-httl\\dm_pms-master\\dm_pms-master\\pms\\views\\tblphonelimits\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|solutionrelative:pms\\views\\tblphonelimits\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|c:\\users\\admin\\nckh-httl\\dm_pms-master\\dm_pms-master\\pms\\views\\phutro\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|solutionrelative:pms\\views\\phutro\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|c:\\users\\admin\\nckh-httl\\dm_pms-master\\dm_pms-master\\pms\\views\\tblphonelimits\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|solutionrelative:pms\\views\\tblphonelimits\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|c:\\users\\admin\\nckh-httl\\dm_pms-master\\dm_pms-master\\pms\\views\\phutro\\_phutrotncn.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|solutionrelative:pms\\views\\phutro\\_phutrotncn.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|c:\\users\\admin\\nckh-httl\\dm_pms-master\\dm_pms-master\\pms\\views\\tbldepartments\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|solutionrelative:pms\\views\\tbldepartments\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|c:\\users\\admin\\nckh-httl\\dm_pms-master\\dm_pms-master\\pms\\views\\phutro\\_phutrocdphi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|solutionrelative:pms\\views\\phutro\\_phutrocdphi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|c:\\users\\admin\\nckh-httl\\dm_pms-master\\dm_pms-master\\pms\\controllers\\tblphonelimitscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|solutionrelative:pms\\controllers\\tblphonelimitscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|c:\\users\\admin\\nckh-httl\\dm_pms-master\\dm_pms-master\\pms\\views\\phutro\\_phutrodienthoai.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|solutionrelative:pms\\views\\phutro\\_phutrodienthoai.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|c:\\users\\admin\\nckh-httl\\dm_pms-master\\dm_pms-master\\pms\\views\\tbldepartments\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|solutionrelative:pms\\views\\tbldepartments\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|c:\\users\\admin\\nckh-httl\\dm_pms-master\\dm_pms-master\\pms\\views\\tblphonelimits\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|solutionrelative:pms\\views\\tblphonelimits\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|c:\\users\\admin\\nckh-httl\\dm_pms-master\\dm_pms-master\\pms\\views\\tblphonelimits\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|solutionrelative:pms\\views\\tblphonelimits\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|c:\\users\\admin\\nckh-httl\\dm_pms-master\\dm_pms-master\\pms\\views\\tblbasesalaries\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|solutionrelative:pms\\views\\tblbasesalaries\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|c:\\users\\admin\\nckh-httl\\dm_pms-master\\dm_pms-master\\pms\\controllers\\phutrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|solutionrelative:pms\\controllers\\phutrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -57,125 +45,82 @@
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Views\\TblBaseSalaries\\Create.cshtml",
+              "RelativeDocumentMoniker": "PMS\\Views\\TblBaseSalaries\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Views\\TblBaseSalaries\\Create.cshtml",
+              "RelativeToolTip": "PMS\\Views\\TblBaseSalaries\\Create.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-23T10:59:39.917Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Views\\TblPhoneLimits\\Details.cshtml",
-              "RelativeDocumentMoniker": "PMS\\Views\\TblPhoneLimits\\Details.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Views\\TblPhoneLimits\\Details.cshtml",
-              "RelativeToolTip": "PMS\\Views\\TblPhoneLimits\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-23T03:12:56.881Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Views\\TblPhoneLimits\\Edit.cshtml",
-              "RelativeDocumentMoniker": "PMS\\Views\\TblPhoneLimits\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Views\\TblPhoneLimits\\Edit.cshtml",
-              "RelativeToolTip": "PMS\\Views\\TblPhoneLimits\\Edit.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAFYAAAAAAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Views\\Phutro\\Index.cshtml",
+              "RelativeDocumentMoniker": "PMS\\Views\\Phutro\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Views\\Phutro\\Index.cshtml",
+              "RelativeToolTip": "PMS\\Views\\Phutro\\Index.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADwAAABdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-23T02:47:08.856Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Views\\TblDepartments\\Edit.cshtml",
-              "RelativeDocumentMoniker": "PMS\\Views\\TblDepartments\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Views\\TblDepartments\\Edit.cshtml",
-              "RelativeToolTip": "PMS\\Views\\TblDepartments\\Edit.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAADwv0IAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-23T02:47:05.342Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Views\\TblDepartments\\Delete.cshtml",
-              "RelativeDocumentMoniker": "PMS\\Views\\TblDepartments\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Views\\TblDepartments\\Delete.cshtml",
-              "RelativeToolTip": "PMS\\Views\\TblDepartments\\Delete.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-23T02:45:56.912Z",
+              "WhenOpened": "2025-08-23T10:52:23.236Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Views\\TblPhoneLimits\\Delete.cshtml",
-              "RelativeDocumentMoniker": "PMS\\Views\\TblPhoneLimits\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Views\\TblPhoneLimits\\Delete.cshtml",
-              "RelativeToolTip": "PMS\\Views\\TblPhoneLimits\\Delete.cshtml",
-              "ViewState": "AgIAACQAAAAAAAAAAADwvzwAAABjAAAAAAAAAA==",
+              "Title": "_PhuTroTNCN.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Views\\Phutro\\_PhuTroTNCN.cshtml",
+              "RelativeDocumentMoniker": "PMS\\Views\\Phutro\\_PhuTroTNCN.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Views\\Phutro\\_PhuTroTNCN.cshtml",
+              "RelativeToolTip": "PMS\\Views\\Phutro\\_PhuTroTNCN.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-23T02:45:35.031Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-23T10:36:22.337Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Views\\TblPhoneLimits\\Create.cshtml",
-              "RelativeDocumentMoniker": "PMS\\Views\\TblPhoneLimits\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Views\\TblPhoneLimits\\Create.cshtml",
-              "RelativeToolTip": "PMS\\Views\\TblPhoneLimits\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAA1AAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "_PhuTroCDPhi.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Views\\Phutro\\_PhuTroCDPhi.cshtml",
+              "RelativeDocumentMoniker": "PMS\\Views\\Phutro\\_PhuTroCDPhi.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Views\\Phutro\\_PhuTroCDPhi.cshtml",
+              "RelativeToolTip": "PMS\\Views\\Phutro\\_PhuTroCDPhi.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-23T02:36:25.337Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Views\\TblBaseSalaries\\Index.cshtml",
-              "RelativeDocumentMoniker": "PMS\\Views\\TblBaseSalaries\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Views\\TblBaseSalaries\\Index.cshtml",
-              "RelativeToolTip": "PMS\\Views\\TblBaseSalaries\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-23T02:25:14.157Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Views\\TblPhoneLimits\\Index.cshtml",
-              "RelativeDocumentMoniker": "PMS\\Views\\TblPhoneLimits\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Views\\TblPhoneLimits\\Index.cshtml",
-              "RelativeToolTip": "PMS\\Views\\TblPhoneLimits\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-23T02:03:13.159Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-23T10:35:56.895Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "TblPhoneLimitsController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Controllers\\TblPhoneLimitsController.cs",
-              "RelativeDocumentMoniker": "PMS\\Controllers\\TblPhoneLimitsController.cs",
-              "ToolTip": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Controllers\\TblPhoneLimitsController.cs",
-              "RelativeToolTip": "PMS\\Controllers\\TblPhoneLimitsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAA5AAAAAAAAAA==",
+              "Title": "_PhuTroDienThoai.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Views\\Phutro\\_PhuTroDienThoai.cshtml",
+              "RelativeDocumentMoniker": "PMS\\Views\\Phutro\\_PhuTroDienThoai.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Views\\Phutro\\_PhuTroDienThoai.cshtml",
+              "RelativeToolTip": "PMS\\Views\\Phutro\\_PhuTroDienThoai.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-23T10:35:33.989Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PhuTroController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Controllers\\PhuTroController.cs",
+              "RelativeDocumentMoniker": "PMS\\Controllers\\PhuTroController.cs",
+              "ToolTip": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Controllers\\PhuTroController.cs",
+              "RelativeToolTip": "PMS\\Controllers\\PhuTroController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-23T01:50:51.622Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-23T09:45:57.557Z"
             }
           ]
         }

@@ -1,0 +1,126 @@
+﻿@{
+    ViewData["Title"] = "QUẢN LÝ PHỤ TRỢ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title mb-4">
+                    DANH SÁCH QUẢN LÝ PHỤ TRỢ THÁNG @DateTime.Now.Month/@DateTime.Now.Year
+                </h4>
+
+                <!-- Bộ lọc -->
+                <div class="row mt-4 mb-4">
+                    <div class="col-12">
+                        <div class="d-flex align-items-center flex-wrap" style="gap: 2rem;">
+                            <!-- Chọn thời gian -->
+                            <div class="d-flex align-items-center">
+                                <label class="me-3 mb-0 fw-semibold text-nowrap">Chọn thời gian:</label>
+                                <div class="d-flex" style="gap: 0.75rem;">
+                                    <select class="form-control form-control-sm" id="selectMonth" style="width:100px;">
+                                        @for (int i = 1; i <= 12; i++)
+                                        {
+                                            var selected = i == DateTime.Now.Month ? "selected" : "";
+                                            <option value="@i" selected="@selected">Tháng @i</option>
+                                        }
+                                    </select>
+                                    <select class="form-control form-control-sm" id="selectYear" style="width:120px;">
+                                        @for (int i = DateTime.Now.Year - 2; i <= DateTime.Now.Year + 1; i++)
+                                        {
+                                            var selected = i == DateTime.Now.Year ? "selected" : "";
+                                            <option value="@i" selected="@selected">Năm @i</option>
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Loại phụ trợ -->
+                            <div class="d-flex align-items-center">
+                                <label class="me-3 mb-0 fw-semibold text-nowrap">Loại phụ trợ:</label>
+                                <div class="d-flex" style="gap: 1.5rem;">
+                                    <div class="form-check mb-0">
+                                        <input class="form-check-input me-2" type="radio" name="loaiPhuTro" id="dienThoai" value="DienThoai" checked>
+                                        <label class="form-check-label" for="dienThoai">Điện thoại</label>
+                                    </div>
+                                    <div class="form-check mb-0">
+                                        <input class="form-check-input me-2" type="radio" name="loaiPhuTro" id="cdPhi" value="CDPhi">
+                                        <label class="form-check-label" for="cdPhi">CĐ Phí</label>
+                                    </div>
+                                    <div class="form-check mb-0">
+                                        <input class="form-check-input me-2" type="radio" name="loaiPhuTro" id="tncn" value="TNCN">
+                                        <label class="form-check-label" for="tncn">TNCN</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Nút bấm -->
+                            <div class="ms-auto">
+                                <div class="d-flex" style="gap: 0.75rem;">
+                                    <button id="btnTimKiem" class="btn btn-info btn-sm px-4">
+                                        Tìm kiếm
+                                    </button>
+                                    <button id="btnXuatExcel" class="btn btn-success btn-sm px-4">
+                                        Xuất Excel
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Đường phân cách -->
+                <hr class="my-4">
+
+                <!-- Kết quả load AJAX -->
+                <div class="table-responsive" id="bangKetQua">
+                    @Html.Partial("_PhuTroDienThoai") <!-- bảng mặc định load -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            function loadBangPhuTro() {
+                var loai = $('input[name="loaiPhuTro"]:checked').val();
+                var thang = $('#selectMonth').val();
+                var nam = $('#selectYear').val();
+
+                // Thêm loading indicator
+                $('#bangKetQua').html('<div class="text-center py-4"><i class="fas fa-spinner fa-spin"></i> Đang tải dữ liệu...</div>');
+
+                $.ajax({
+                    url: '/PhuTro/RenderPhuTro',
+                    type: 'GET',
+                    data: { loai: loai, thang: thang, nam: nam },
+                    success: function (data) {
+                        $('#bangKetQua').html(data);
+                    },
+                    error: function () {
+                        $('#bangKetQua').html('<div class="alert alert-danger">Lỗi khi tải dữ liệu. Vui lòng thử lại.</div>');
+                    }
+                });
+            }
+
+            // Khi ấn nút "Tìm kiếm"
+            $('#btnTimKiem').click(function () {
+                loadBangPhuTro();
+            });
+
+            // Khi chọn radio "loaiPhuTro"
+            $('input[name="loaiPhuTro"]').change(function () {
+                loadBangPhuTro();
+            });
+
+            // Khi thay đổi tháng/năm
+            $('#selectMonth, #selectYear').change(function () {
+                loadBangPhuTro();
+            });
+        });
+    </script>
+}
