@@ -1,0 +1,161 @@
+﻿@model PMS.Models.TblUser
+
+@{
+    ViewData["Title"] = "Chỉnh sửa người dùng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow border-0 rounded-3">
+                <div class="card-body">
+
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="card-title mb-0">Chỉnh sửa người dùng</h4>
+                        <a href="@Url.Action("Index")" class="btn btn-secondary btn-sm">
+                            <i class="fa fa-arrow-left"></i> Quay lại
+                        </a>
+                    </div>
+                    <hr />
+
+                    <form asp-action="Edit" method="post" id="editUserForm">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+                        <input type="hidden" asp-for="Id" />
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="Name" class="control-label font-weight-bold">Tên người dùng</label>
+                                    <input asp-for="Name" class="form-control" />
+                                    <span asp-validation-for="Name" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label asp-for="UserCode" class="control-label font-weight-bold">Mã nhân viên</label>
+                                    <input asp-for="UserCode" class="form-control" />
+                                    <span asp-validation-for="UserCode" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label asp-for="Dob" class="control-label font-weight-bold">Ngày sinh</label>
+                                    <input asp-for="Dob" type="date" class="form-control" />
+                                    <span asp-validation-for="Dob" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label asp-for="BankNo" class="control-label font-weight-bold">Số tài khoản</label>
+                                    <input asp-for="BankNo" class="form-control" />
+                                    <span asp-validation-for="BankNo" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label asp-for="SalaryConfficient" class="control-label font-weight-bold">Hệ số lương</label>
+                                    <input asp-for="SalaryConfficient" class="form-control" />
+                                    <span asp-validation-for="SalaryConfficient" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label asp-for="EmploymentDate" class="control-label font-weight-bold">Ngày vào làm</label>
+                                    <input asp-for="EmploymentDate" type="date" class="form-control" />
+                                    <span asp-validation-for="EmploymentDate" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label asp-for="DateIssued" class="control-label font-weight-bold">Ngày cấp</label>
+                                    <input asp-for="DateIssued" type="date" class="form-control" />
+                                    <span asp-validation-for="DateIssued" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="CreatedDate" class="control-label font-weight-bold">Ngày tạo</label>
+                                    <input asp-for="CreatedDate" type="datetime-local" class="form-control" />
+                                    <span asp-validation-for="CreatedDate" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label asp-for="CreatedUser" class="control-label font-weight-bold">Người tạo</label>
+                                    <input asp-for="CreatedUser" class="form-control" />
+                                    <span asp-validation-for="CreatedUser" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="Description" class="control-label font-weight-bold">Mô tả</label>
+                                    <textarea asp-for="Description" class="form-control" rows="3"></textarea>
+                                    <span asp-validation-for="Description" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="AccountName" class="control-label font-weight-bold">Tài khoản</label>
+                                    <input asp-for="AccountName" class="form-control" />
+                                    <span asp-validation-for="AccountName" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label asp-for="Password" class="control-label font-weight-bold">Mật khẩu</label>
+                                    <input asp-for="Password" class="form-control" />
+                                    <span asp-validation-for="Password" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label asp-for="EmailAddress" class="control-label font-weight-bold">Email</label>
+                                    <input asp-for="EmailAddress" class="form-control" />
+                                    <span asp-validation-for="EmailAddress" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="OrderNumber" class="control-label font-weight-bold">Số thứ tự</label>
+                                    <input asp-for="OrderNumber" class="form-control" />
+                                    <span asp-validation-for="OrderNumber" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label asp-for="Status" class="control-label font-weight-bold">Trạng thái</label>
+                                    <select asp-for="Status" class="form-control">
+                                        <option value="1">Hoạt động</option>
+                                        <option value="0">Ngưng hoạt động</option>
+                                    </select>
+                                    <span asp-validation-for="Status" class="text-danger"></span>
+                                </div>
+
+                               
+
+                                <div class="form-group">
+                                    <label asp-for="ModifiedDate" class="control-label font-weight-bold">Ngày sửa</label>
+                                    <input asp-for="ModifiedDate" type="datetime-local" class="form-control" />
+                                    <span asp-validation-for="ModifiedDate" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label asp-for="ModifiedUser" class="control-label font-weight-bold">Người sửa</label>
+                                    <input asp-for="ModifiedUser" class="form-control" />
+                                    <span asp-validation-for="ModifiedUser" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group text-center mt-4">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="fa fa-save"></i> Lưu thay đổi
+                            </button>
+                            <a asp-action="Index" class="btn btn-secondary btn-lg ml-2">
+                                <i class="fa fa-arrow-left"></i> Quay lại
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}
+
+<script>
+    document.getElementById("editUserForm").addEventListener("submit", function (e) {
+        if (!confirm("Bạn có chắc chắn muốn cập nhật thông tin người dùng '@Html.Raw(Model.Name)'?")) {
+            e.preventDefault();
+        }
+    });
+</script>

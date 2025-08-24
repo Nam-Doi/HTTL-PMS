@@ -390,3 +390,8 @@ C:\Users\Admin\NCKH-HTTL\DM_PMS-master\DM_PMS-master\PMS\obj\Debug\net5.0\Razor\
 C:\Users\Admin\NCKH-HTTL\DM_PMS-master\DM_PMS-master\PMS\obj\Debug\net5.0\Razor\Views\Phutro\_PhuTroCDPhi.cshtml.g.cs
 C:\Users\Admin\NCKH-HTTL\DM_PMS-master\DM_PMS-master\PMS\obj\Debug\net5.0\Razor\Views\Phutro\_PhuTroDienThoai.cshtml.g.cs
 C:\Users\Admin\NCKH-HTTL\DM_PMS-master\DM_PMS-master\PMS\obj\Debug\net5.0\Razor\Views\Phutro\_PhuTroTNCN.cshtml.g.cs
+C:\Users\Admin\NCKH-HTTL\DM_PMS-master\DM_PMS-master\PMS\obj\Debug\net5.0\Razor\Views\TblUsers\Create.cshtml.g.cs
+C:\Users\Admin\NCKH-HTTL\DM_PMS-master\DM_PMS-master\PMS\obj\Debug\net5.0\Razor\Views\TblUsers\Delete.cshtml.g.cs
+C:\Users\Admin\NCKH-HTTL\DM_PMS-master\DM_PMS-master\PMS\obj\Debug\net5.0\Razor\Views\TblUsers\Details.cshtml.g.cs
+C:\Users\Admin\NCKH-HTTL\DM_PMS-master\DM_PMS-master\PMS\obj\Debug\net5.0\Razor\Views\TblUsers\Edit.cshtml.g.cs
+C:\Users\Admin\NCKH-HTTL\DM_PMS-master\DM_PMS-master\PMS\obj\Debug\net5.0\Razor\Views\TblUsers\Index.cshtml.g.cs

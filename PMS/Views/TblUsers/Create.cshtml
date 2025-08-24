@@ -1,0 +1,193 @@
+﻿@model PMS.Models.TblUser
+
+@{
+    ViewData["Title"] = "Thêm mới người dùng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+
+                    <!-- Header -->
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="card-title mb-0">Thêm mới người dùng</h4>
+                        <a asp-action="Index" class="btn btn-secondary btn-sm">
+                            <i class="fa fa-arrow-left"></i> Quay lại
+                        </a>
+                    </div>
+                    <hr />
+
+                    <!-- Form -->
+                    <form asp-action="Create" method="post" enctype="multipart/form-data">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                        <div class="row">
+                            <!-- Cột 1: Upload ảnh -->
+                            <div class="col-md-2">
+                                <div class="form-group text-center">
+                                    <div class="upload-image-container" style="border: 2px dashed #ddd; padding: 15px; border-radius: 8px; background-color: #f8f9fa;">
+                                        <div class="image-preview" id="imagePreview" style="margin-bottom: 10px;">
+                                            <img id="previewImg" src="#" alt="Preview" style="max-width: 120px; max-height: 120px; display: none; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
+                                            <div id="placeholderImg" style="width: 120px; height: 120px; background-color: #e9ecef; display: flex; align-items: center; justify-content: center; border-radius: 8px; margin: 0 auto;">
+                                                <i class="fa fa-user" style="font-size: 40px; color: #6c757d;"></i>
+                                            </div>
+                                        </div>
+                                        <input type="file" id="imageUpload" name="ImageFile" accept="image/*" style="display: none;" />
+                                        <button type="button" class="btn btn-outline-primary btn-sm" onclick="document.getElementById('imageUpload').click();">
+                                            <i class="fa fa-upload"></i> Chọn ảnh
+                                        </button>
+                                        <small class="form-text text-muted mt-1" style="font-size: 10px;">JPG, PNG (max 5MB)</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Cột 2: Thông tin cơ bản -->
+                            <div class="col-md-5">
+                                <div class="form-group">
+                                    <label asp-for="Name" class="control-label font-weight-bold">Tên nhân viên <span class="text-danger">*</span></label>
+                                    <input asp-for="Name" class="form-control" placeholder="Nhập tên nhân viên" />
+                                    <span asp-validation-for="Name" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label asp-for="Dob" class="control-label font-weight-bold">Ngày sinh</label>
+                                    <input asp-for="Dob" type="date" class="form-control" />
+                                    <span asp-validation-for="Dob" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="control-label font-weight-bold">Phòng ban</label>
+                                    <select class="form-control">
+                                        <option>Tất cả</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label asp-for="SalaryConfficient" class="control-label font-weight-bold">Hệ số lương</label>
+                                    <input asp-for="SalaryConfficient" type="number" class="form-control" placeholder="Nhập hệ số lương" />
+                                    <span asp-validation-for="SalaryConfficient" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label asp-for="AccountName" class="control-label font-weight-bold">Tài khoản</label>
+                                    <input asp-for="AccountName" class="form-control" placeholder="Tên tài khoản" />
+                                    <span asp-validation-for="AccountName" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label asp-for="EmailAddress" class="control-label font-weight-bold">Địa chỉ email</label>
+                                    <input asp-for="EmailAddress" type="email" class="form-control" placeholder="Nhập thông tin email" />
+                                    <span asp-validation-for="EmailAddress" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="control-label font-weight-bold">Quyền người dùng</label>
+                                    <select class="form-control">
+                                        <option>Chọn quyền người dùng</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Cột 3: Thông tin bổ sung -->
+                            <div class="col-md-5">
+                                <div class="form-group">
+                                    <label asp-for="UserCode" class="control-label font-weight-bold">Mã nhân viên</label>
+                                    <input asp-for="UserCode" class="form-control" placeholder="2024 ABC 12 AO" />
+                                    <span asp-validation-for="UserCode" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label asp-for="BankNo" class="control-label font-weight-bold">Số tài khoản</label>
+                                    <input asp-for="BankNo" class="form-control" placeholder="Nhập số tài khoản ngân hàng" />
+                                    <span asp-validation-for="BankNo" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="control-label font-weight-bold">Chức danh</label>
+                                    <select class="form-control">
+                                        <option>Tất cả</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label asp-for="EmploymentDate" class="control-label font-weight-bold">Ngày hiệu lực</label>
+                                    <input asp-for="EmploymentDate" type="date" class="form-control" />
+                                    <span asp-validation-for="EmploymentDate" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label asp-for="Password" class="control-label font-weight-bold">Mật khẩu</label>
+                                    <input asp-for="Password" type="password" class="form-control" placeholder="••••••••" />
+                                    <span asp-validation-for="Password" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label asp-for="OrderNumber" class="control-label font-weight-bold">Số thứ tự</label>
+                                    <input asp-for="OrderNumber" type="number" class="form-control" placeholder="3" />
+                                    <span asp-validation-for="OrderNumber" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-10">
+                                <div class="form-group">
+                                    <label asp-for="Description" class="control-label font-weight-bold">Ghi chú</label>
+                                    <textarea asp-for="Description" class="form-control" rows="3" placeholder="Nội dung ghi chú"></textarea>
+                                    <span asp-validation-for="Description" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="form-group text-center mt-4">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fa fa-save"></i> Ghi dữ liệu
+                            </button>
+                            <a asp-action="Index" class="btn btn-success ml-2">
+                                <i class="fa fa-arrow-left"></i> Quay lại
+                            </a>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+
+    <script>
+        // Preview image function
+        document.getElementById('imageUpload').addEventListener('change', function (e) {
+            const file = e.target.files[0];
+            if (file) {
+                // Check file size (5MB)
+                if (file.size > 5 * 1024 * 1024) {
+                    alert('Kích thước file không được vượt quá 5MB');
+                    return;
+                }
+
+                // Check file type
+                if (!file.type.match('image.*')) {
+                    alert('Vui lòng chọn file hình ảnh');
+                    return;
+                }
+
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    document.getElementById('previewImg').src = e.target.result;
+                    document.getElementById('previewImg').style.display = 'block';
+                    document.getElementById('placeholderImg').style.display = 'none';
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+}

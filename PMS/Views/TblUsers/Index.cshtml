@@ -1,0 +1,91 @@
+﻿@model IEnumerable<PMS.Models.TblUser>
+
+@{
+    ViewData["Title"] = "Danh sách người dùng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .objRight {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    /* Tô màu xen kẽ cho hàng */
+    #userTable tbody tr:nth-child(odd) {
+        background-color: #ffffff; /* trắng */
+    }
+
+    #userTable tbody tr:nth-child(even) {
+        background-color: #f2f2f2; /* xám nhạt */
+    }
+
+    .sticky-col {
+        position: sticky;
+    }
+
+    thead th.sticky-col {
+        z-index: 3;
+    }
+</style>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="row mb-2">
+                    <div class="col-12 d-flex justify-content-between align-items-center">
+                        <h4 class="card-title mb-0">Quản lý người dùng</h4>
+                        <a href="@Url.Action("Create")" class="btn btn-sm btn-success">
+                            Thêm mới
+                        </a>
+                    </div>
+                </div>
+
+                <div class="table-responsive" style="overflow-x:auto;">
+                    <table id="userTable" class="table table-bordered table-striped border rounded-3">
+                        <thead>
+                            <tr>
+                                <th class="text-center sticky-col" style="width:40px;">STT</th>
+                                <th class="text-center">Tên người dùng</th>
+                                <th class="text-center">Chức danh</th>
+                                <th class="text-center">Mã nhân viên</th>
+                                <th class="text-center">Ghi chú</th>
+                                <th class="text-center" style="width:100px;">Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (Model != null)
+                            {
+                                var i = 1;
+                                foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td class="text-center sticky-col" style="left:0; background:#fff;">@(i++)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.Description)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.UserCode)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.Description)</td>
+                                        <td class="text-center">
+                                            <a asp-action="Edit" asp-route-id="@item.Id" class="text-primary me-2" title="Sửa">
+                                                <i class="bi bi-pencil-square fs-5"></i>
+                                            </a>
+                                            <a asp-action="Delete" asp-route-id="@item.Id" class="text-danger me-2" title="Xóa">
+                                                <i class="bi bi-trash fs-5"></i>
+                                            </a>
+                                            <a asp-action="Details" asp-route-id="@item.Id" class="text-info" title="Chi tiết">
+                                                <i class="bi bi-eye fs-5"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
