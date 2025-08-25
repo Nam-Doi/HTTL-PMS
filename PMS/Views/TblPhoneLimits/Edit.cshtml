@@ -13,9 +13,6 @@
                     <!-- Header -->
                     <div class="d-flex justify-content-between align-items-center mb-3">
                         <h4 class="card-title mb-0">Chỉnh sửa định mức điện thoại</h4>
-                        <a href="@Url.Action("Index")" class="btn btn-secondary btn-sm">
-                            <i class="fa fa-arrow-left"></i> Quay lại
-                        </a>
                     </div>
                     <hr />
 
@@ -29,31 +26,31 @@
                             <div class="col-md-6">
                                 <div class="mb-2">
                                     <label asp-for="PosionId" class="form-label fw-bold">Vị trí <span class="text-danger">*</span></label>
-                                    <select asp-for="PosionId" class="form-control form-control-sm" asp-items="ViewBag.PosionId"></select>
+                                    <select asp-for="PosionId" class="form-control form-control" asp-items="ViewBag.PosionId"></select>
                                     <span asp-validation-for="PosionId" class="text-danger"></span>
                                 </div>
 
                                 <div class="mb-2">
                                     <label asp-for="ValueLimit" class="form-label fw-bold">Giá trị định mức <span class="text-danger">*</span></label>
-                                    <input asp-for="ValueLimit" class="form-control form-control-sm" />
+                                    <input asp-for="ValueLimit" class="form-control form-control" />
                                     <span asp-validation-for="ValueLimit" class="text-danger"></span>
                                 </div>
 
                                 <div class="mb-2">
                                     <label asp-for="DateIssued" class="form-label fw-bold">Ngày ban hành</label>
-                                    <input asp-for="DateIssued" class="form-control form-control-sm" />
+                                    <input asp-for="DateIssued" class="form-control form-control" />
                                     <span asp-validation-for="DateIssued" class="text-danger"></span>
                                 </div>
 
                                 <div class="mb-2">
                                     <label asp-for="Status" class="form-label fw-bold">Trạng thái</label>
-                                    <input asp-for="Status" class="form-control form-control-sm" />
+                                    <input asp-for="Status" class="form-control form-control" />
                                     <span asp-validation-for="Status" class="text-danger"></span>
                                 </div>
 
                                 <div class="mb-2">
                                     <label asp-for="Note" class="form-label fw-bold">Ghi chú</label>
-                                    <textarea asp-for="Note" class="form-control form-control-sm" rows="5" placeholder="Nhập ghi chú..."></textarea>
+                                    <textarea asp-for="Note" class="form-control form-control" rows="5" placeholder="Nhập ghi chú..."></textarea>
                                     <span asp-validation-for="Note" class="text-danger"></span>
                                 </div>
                             </div>
@@ -61,36 +58,36 @@
                             <div class="col-md-6">
                                 <div class="mb-2">
                                     <label asp-for="CreatedDate" class="form-label fw-bold">Ngày tạo</label>
-                                    <input asp-for="CreatedDate" class="form-control form-control-sm" />
+                                    <input asp-for="CreatedDate" class="form-control form-control" />
                                     <span asp-validation-for="CreatedDate" class="text-danger"></span>
                                 </div>
 
                                 <div class="mb-2">
                                     <label asp-for="CreatedUser" class="form-label fw-bold">Người tạo</label>
-                                    <input asp-for="CreatedUser" class="form-control form-control-sm" />
+                                    <input asp-for="CreatedUser" class="form-control form-control" />
                                     <span asp-validation-for="CreatedUser" class="text-danger"></span>
                                 </div>
 
                                 <div class="mb-2">
                                     <label asp-for="ModifiedDate" class="form-label fw-bold">Ngày sửa</label>
-                                    <input asp-for="ModifiedDate" class="form-control form-control-sm" />
+                                    <input asp-for="ModifiedDate" class="form-control form-control" />
                                     <span asp-validation-for="ModifiedDate" class="text-danger"></span>
                                 </div>
 
                                 <div class="mb-2">
                                     <label asp-for="ModifiedUser" class="form-label fw-bold">Người sửa</label>
-                                    <input asp-for="ModifiedUser" class="form-control form-control-sm" />
+                                    <input asp-for="ModifiedUser" class="form-control form-control" />
                                     <span asp-validation-for="ModifiedUser" class="text-danger"></span>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Buttons -->
-                        <div class="form-group text-center mt-4">
-                            <button type="submit" class="btn btn-primary btn-lg">
+                        <div class="form-group  mt-4">
+                            <button type="submit" class="btn btn-primary btn">
                                 <i class="fa fa-save"></i> Lưu thay đổi
                             </button>
-                            <a asp-action="Index" class="btn btn-secondary btn-lg ms-2">
+                            <a asp-action="Index" class="btn btn-secondary btn ms-2">
                                 <i class="fa fa-arrow-left"></i> Quay lại
                             </a>
                         </div>

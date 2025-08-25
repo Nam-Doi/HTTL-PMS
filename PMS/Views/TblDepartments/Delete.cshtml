@@ -13,9 +13,12 @@
                     <div class="col-lg-9">
                         <h4 class="card-title" style="margin-bottom:0px;">Xóa phòng ban</h4>
                     </div>
-                    <div class="col-lg-3 d-flex justify-content-end">
+                       <!--
+                            <div class="col-lg-3 d-flex justify-content-end">
                         <a href="@Url.Action("Index")" class="btn btn-sm btn-secondary">Quay lại</a>
                     </div>
+                       -->
+                   
                 </div>
                 <hr />
 
@@ -66,19 +69,19 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="text-center mt-4">
-                            <form asp-action="Delete" style="display: inline;" id="deleteForm">
-                                <input type="hidden" asp-for="Id" />
-                                <button type="submit" class="btn btn-danger btn-lg">
-                                    <i class="fa fa-trash"></i> Xác nhận xóa
-                                </button>
-                            </form>
-                            <a asp-action="Index" class="btn btn-secondary btn-lg ms-2">
-                                <i class="fa fa-times"></i> Hủy bỏ
-                            </a>
-                        </div>
                     </div>
+                    
+                </div>
+                <div class=" mt-4">
+                    <form asp-action="Delete" style="display: inline;" id="deleteForm">
+                        <input type="hidden" asp-for="Id" />
+                        <button type="submit" class="btn btn-danger btn">
+                            <i class="fa fa-trash"></i> Xác nhận xóa
+                        </button>
+                    </form>
+                    <a asp-action="Index" class="btn btn-secondary btn ms-2">
+                        <i class="fa fa-times"></i> Hủy bỏ
+                    </a>
                 </div>
             </div>
         </div>

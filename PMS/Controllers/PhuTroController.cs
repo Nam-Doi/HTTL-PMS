@@ -15,6 +15,7 @@ namespace PMS.Controllers
         {
             switch (loai)
             {
+                // ta có thể sử dụng để gọi các case phù hợp với từng loại phụ trợ
                 case "DienThoai":
                     return PartialView("_PhuTroDienThoai");  // Views/PhuTro/_PhuTroDienThoai.cshtml
 

@@ -133,14 +133,29 @@ namespace PMS.Controllers
             return View(tblUser);
         }
 
-        // POST: TblUsers/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var tblUser = await _context.TblUsers.FindAsync(id);
-            _context.TblUsers.Remove(tblUser);
+            var user = await _context.TblUsers.FindAsync(id);
+
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            // Kiểm tra nếu user này còn trong tblUserDepartment
+            var hasDepartments = await _context.TblUserDepartments.AnyAsync(x => x.UserId == id);
+            if (hasDepartments)
+            {
+                TempData["ErrorMessage"] = "Không thể xóa nhân viên này vì đang được gán vào phòng ban.";
+                return RedirectToAction(nameof(Index));
+            }
+
+            _context.TblUsers.Remove(user);
             await _context.SaveChangesAsync();
+
+            TempData["SuccessMessage"] = "Xóa nhân viên thành công.";
             return RedirectToAction(nameof(Index));
         }
 
