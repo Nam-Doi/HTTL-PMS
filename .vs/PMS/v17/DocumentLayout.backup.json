@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|c:\\users\\admin\\nckh-httl\\dm_pms-master\\dm_pms-master\\pms\\models\\tbluser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|solutionrelative:pms\\models\\tbluser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|c:\\users\\admin\\nckh-httl\\dm_pms-master\\dm_pms-master\\pms\\models\\tbldepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|solutionrelative:pms\\models\\tbldepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|c:\\users\\admin\\nckh-httl\\dm_pms-master\\dm_pms-master\\pms\\models\\tblbasesalary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|solutionrelative:pms\\models\\tblbasesalary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|c:\\users\\admin\\nckh-httl\\dm_pms-master\\dm_pms-master\\pms\\views\\tblusers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|solutionrelative:pms\\views\\tblusers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|c:\\users\\admin\\nckh-httl\\dm_pms-master\\dm_pms-master\\pms\\controllers\\tbluserscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|solutionrelative:pms\\controllers\\tbluserscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|c:\\users\\admin\\nckh-httl\\dm_pms-master\\dm_pms-master\\pms\\views\\tbldepartments\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|solutionrelative:pms\\views\\tbldepartments\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|c:\\users\\admin\\nckh-httl\\dm_pms-master\\dm_pms-master\\pms\\views\\tblusers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|solutionrelative:pms\\views\\tblusers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D5C520A2-2E45-45A2-9733-46C17B531AC2}|PMS\\PMS.csproj|c:\\users\\admin\\nckh-httl\\dm_pms-master\\dm_pms-master\\pms\\views\\tblphonelimits\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -50,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -61,25 +73,64 @@
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TblUsersController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Controllers\\TblUsersController.cs",
-              "RelativeDocumentMoniker": "PMS\\Controllers\\TblUsersController.cs",
-              "ToolTip": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Controllers\\TblUsersController.cs",
-              "RelativeToolTip": "PMS\\Controllers\\TblUsersController.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAwwJ8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T09:42:58.566Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "TblDepartment.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Models\\TblDepartment.cs",
+              "RelativeDocumentMoniker": "PMS\\Models\\TblDepartment.cs",
+              "ToolTip": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Models\\TblDepartment.cs",
+              "RelativeToolTip": "PMS\\Models\\TblDepartment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T09:54:59.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TblBaseSalary.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Models\\TblBaseSalary.cs",
+              "RelativeDocumentMoniker": "PMS\\Models\\TblBaseSalary.cs",
+              "ToolTip": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Models\\TblBaseSalary.cs",
+              "RelativeToolTip": "PMS\\Models\\TblBaseSalary.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T09:54:54.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TblUser.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Models\\TblUser.cs",
+              "RelativeDocumentMoniker": "PMS\\Models\\TblUser.cs",
+              "ToolTip": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Models\\TblUser.cs",
+              "RelativeToolTip": "PMS\\Models\\TblUser.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T09:54:43.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TblUsersController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Controllers\\TblUsersController.cs",
+              "RelativeDocumentMoniker": "PMS\\Controllers\\TblUsersController.cs",
+              "ToolTip": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Controllers\\TblUsersController.cs",
+              "RelativeToolTip": "PMS\\Controllers\\TblUsersController.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAwwGgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T09:42:58.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "TblDepartmentsController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Controllers\\TblDepartmentsController.cs",
               "RelativeDocumentMoniker": "PMS\\Controllers\\TblDepartmentsController.cs",
@@ -87,12 +138,11 @@
               "RelativeToolTip": "PMS\\Controllers\\TblDepartmentsController.cs",
               "ViewState": "AgIAABIBAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T09:42:23.606Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T09:42:23.606Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Views\\TblDepartments\\Delete.cshtml",
               "RelativeDocumentMoniker": "PMS\\Views\\TblDepartments\\Delete.cshtml",
@@ -100,12 +150,11 @@
               "RelativeToolTip": "PMS\\Views\\TblDepartments\\Delete.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFQAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-25T09:35:26.961Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T09:35:26.961Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Views\\TblDepartments\\Index.cshtml",
               "RelativeDocumentMoniker": "PMS\\Views\\TblDepartments\\Index.cshtml",
@@ -113,12 +162,11 @@
               "RelativeToolTip": "PMS\\Views\\TblDepartments\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-25T09:34:04.148Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T09:34:04.148Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Views\\TblPhoneLimits\\Details.cshtml",
               "RelativeDocumentMoniker": "PMS\\Views\\TblPhoneLimits\\Details.cshtml",
@@ -126,12 +174,11 @@
               "RelativeToolTip": "PMS\\Views\\TblPhoneLimits\\Details.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-25T09:30:15.149Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T09:30:15.149Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Views\\TblPhoneLimits\\Edit.cshtml",
               "RelativeDocumentMoniker": "PMS\\Views\\TblPhoneLimits\\Edit.cshtml",
@@ -139,12 +186,11 @@
               "RelativeToolTip": "PMS\\Views\\TblPhoneLimits\\Edit.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFoAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-25T09:22:13.451Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T09:22:13.451Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Views\\TblPhoneLimits\\Delete.cshtml",
               "RelativeDocumentMoniker": "PMS\\Views\\TblPhoneLimits\\Delete.cshtml",
@@ -152,12 +198,11 @@
               "RelativeToolTip": "PMS\\Views\\TblPhoneLimits\\Delete.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGAAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-25T09:21:49.212Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T09:21:49.212Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Views\\TblPhoneLimits\\Create.cshtml",
               "RelativeDocumentMoniker": "PMS\\Views\\TblPhoneLimits\\Create.cshtml",
@@ -165,25 +210,24 @@
               "RelativeToolTip": "PMS\\Views\\TblPhoneLimits\\Create.cshtml",
               "ViewState": "AgIAAFQAAAAAAAAAAAAswHQAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-25T09:20:45.341Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T09:20:45.341Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Views\\TblUsers\\Create.cshtml",
               "RelativeDocumentMoniker": "PMS\\Views\\TblUsers\\Create.cshtml",
               "ToolTip": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Views\\TblUsers\\Create.cshtml",
               "RelativeToolTip": "PMS\\Views\\TblUsers\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJ4AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-08-25T09:16:58.076Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\NCKH-HTTL\\DM_PMS-master\\DM_PMS-master\\PMS\\Views\\TblUsers\\Delete.cshtml",
               "RelativeDocumentMoniker": "PMS\\Views\\TblUsers\\Delete.cshtml",
@@ -191,8 +235,7 @@
               "RelativeToolTip": "PMS\\Views\\TblUsers\\Delete.cshtml",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAAFIAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-25T09:15:36.772Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T09:15:36.772Z"
             }
           ]
         }
